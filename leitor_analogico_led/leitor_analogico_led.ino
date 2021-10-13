@@ -4,14 +4,14 @@
   http://www.arduino.cc/en/Tutorial/AnalogReadSerial
 */
 
-int inPin12 = 12;
+int inPin13 = 13;
 
 void setup() {  
   // inicializa comunicação serial a 9600 bits por segundo
   Serial.begin(9600);
 
-  //Colocamos o pino 12 do Arduino como OUTPUT (saída)
-  pinMode(inPin12, OUTPUT);
+  //Colocamos o pino 13 do Arduino como OUTPUT (saída)
+  pinMode(inPin13, OUTPUT);
 }
 
 
@@ -19,14 +19,14 @@ void loop() {
   // leitura da entrada analogica no pino 0
   int valorSensor = analogRead(A0);
 
-  // Ativamos o pino 12 (colocando 5v nele)  
-  digitalWrite(inPin12, HIGH);
+  // Ativamos o pino 13 (colocando 5v nele)  
+  digitalWrite(inPin13, HIGH);
 
   // Aguardamos o valor do sensor
   delay(valorSensor);
 
-  // Desligamos o pino 12
-  digitalWrite(inPin12, LOW);
+  // Desligamos o pino 13
+  digitalWrite(inPin13, LOW);
 
   // Aguardamos mais o valor do sensor
   delay(valorSensor);
