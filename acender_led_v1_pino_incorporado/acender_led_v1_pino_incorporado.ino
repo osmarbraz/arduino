@@ -11,13 +11,13 @@ void setup()
 
 void loop()
 {
-	// Aguardamos 1 milésimo de segundo
+	// Aguardamos 1000 milésimos de segundo
 	delay(1000); 
 	
 	// Escrevemos LOW(0) no pino digital 13
 	digitalWrite(LED_BUILTIN, LOW);
 	
-	// Aguardamos 1 milésimo de segundo
+	// Aguardamos 1000 milésimos de segundo
 	delay(1000); 
 		
 	// Escrevemos HIGH(1) no pino digital 13

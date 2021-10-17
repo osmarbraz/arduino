@@ -16,7 +16,7 @@ void setup() {
 }
 
 void loop() {
-	// Definimos tempo com  1 milésimo de segundo
+	// Definimos tempo com  1000 milésimos de segundo
 	tempo = 1000;  
 	// Escrevemos HIGH(1) no pino digital 13
 	digitalWrite(13,HIGH);  //Vermelho
